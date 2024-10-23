@@ -15,6 +15,8 @@ public class Alerts {
 	        Thread.sleep(3000);
 	        
 	        Alert alert=driver.switchTo().alert();
+	        String textOnAlert= alert.getText();
+	        System.out.println(textOnAlert);
 	        alert.accept();
 	        driver.quit();
 	        
