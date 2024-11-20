@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin' # You can choose your JDK distribution (e.g., adopt, zulu)
-          java-version: '11'     # Specify the Java version needed for your project
+          java-version: '21.0.2'     # Specify the Java version needed for your project
 
       # Cache Maven dependencies
       - name: Cache Maven dependencies
