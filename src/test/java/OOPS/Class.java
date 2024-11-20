@@ -1,7 +1,7 @@
 package OOPS;
 
 public class Class {
-
+//test
 	
 		static int plusMethodInt(int x, int y) {
 			  return x + y;
