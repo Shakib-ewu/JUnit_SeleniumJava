@@ -1,7 +1,5 @@
 package AllTests;
 
-import java.util.Arrays;
-
 public class largestOnArray {
     public static void main(String[] args) {
         // Input array
@@ -11,14 +9,22 @@ public class largestOnArray {
         int largest = array[0];
 
         // Iterate through the array to find the largest element
-        for (int num : array) {
-            if (num > largest) {
-                largest = num;
+        /*for (int i : array) {
+            if (i > largest) {
+                largest = i;
             }
+        }*/
+        
+        for (int i=0;i<array.length; i++) {
+        	if(array[i]>largest) {
+        		largest=array[i];
+        	}
+        	
         }
+        System.out.println("The largest element in the array is: " + largest);
 
         // Print the largest element
-        System.out.println("The largest element in the array is: " + largest);
+       // System.out.println("The largest element in the array is: " + largest);
     }
 }
 
